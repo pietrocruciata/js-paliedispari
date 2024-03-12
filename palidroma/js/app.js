@@ -29,8 +29,6 @@ function isPalindrome(word1, word2) {
         // SE LA PAROLA è PALINDRROMA ALLORA TORNERà TRUE
         if (word1[i] === word2[i]) {
             result = true
-        } else {
-            result = false
         }
     }
 
