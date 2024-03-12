@@ -1,5 +1,5 @@
 // CHIEDERE ALL'UTENTE DI INSERIRE UNA PAROLA
-const word = prompt('inserisi una parola') 
+const word = prompt('inserisi una parola')
 
 //CREARE UN ARRAY CON CICLO FOR PER LEGGERE LA PROLA LETTERA PER LETTERA
 const array = [];
@@ -28,13 +28,17 @@ function isPalindrome(word1, word2) {
     for (let i = 0; i < word.length; i++) {
         // SE LA PAROLA è PALINDRROMA ALLORA TORNERà TRUE
         if (word1[i] === word2[i]) {
-            console.log('la parola è palindroma');
             result = true
-            // ALTRIMENTI TORNERà FALSE
         } else {
-            console.log('la parola non è palindroma');
             result = false
         }
+    }
+
+    if (result === true) {
+        console.log('la parola è palindroma');
+    } else {
+        console.log('la parola non è palindroma');
+
     }
     return result
 }
@@ -42,5 +46,13 @@ function isPalindrome(word1, word2) {
 // STAMPARE IL RISULTATO DEL CONTROLLO
 const finalResult = isPalindrome(array, arrayReverse);
 console.log(finalResult);
+
+
+
+
+
+
+
+
 
 
